@@ -34,12 +34,14 @@ export default function AddCategouries() {
             setdisaple(true);
         }
     }, [title, image])
+  
     async function handleSubmet(e) {
         // get form
         const form  = new FormData();
         form.append("title", title);
         form.append("image", image);
         e.preventDefault();
+         
         setload(true);
         try {
             let res = await Axios.post(`${CAT}/add`, form)
