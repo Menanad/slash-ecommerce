@@ -1,0 +1,15 @@
+export const main_api = 'http://127.0.0.1:8000/api' ;
+export const register = '/register' ;
+export const login = '/login' ;
+export const users = '/users' ;
+export const USER = '/user' ;
+export const LOGOUT = '/logout' ;
+export const CATEGORIES = '/categories' ;
+export const CAT = '/category' ;
+export const Productsapi = '/products' ;
+export const Productapi= '/product' ;
+export const LatestProduct= '/latest-sale' ;
+export const Latest= '/latest' ;
+export const TopRatedApi= '/top-rated' ;
+export const CART= '/cart' ;
+export const GOOGLECALLBACK = '/auth/google/callback';

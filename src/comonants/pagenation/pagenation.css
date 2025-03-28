@@ -1,0 +1,29 @@
+.custom-pagenation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #dbd6e1;
+}
+.pagination-tag-anchor{
+    color: aliceblue;
+    background: #773bc0;
+    padding: 7px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.nextClassName ,.previousClassName{
+    color: #260054;
+}
+.activeLinkClassName{
+    background: #bfb4e6;
+    color: rgb(31, 42, 99);
+    transition: 0.3;
+    -webkit-transition: 0.3;
+    -moz-transition: 0.3;
+    -ms-transition: 0.3;
+    -o-transition: 0.3;
+}

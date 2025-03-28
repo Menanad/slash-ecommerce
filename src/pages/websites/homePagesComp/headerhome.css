@@ -1,0 +1,322 @@
+ .carousel {
+     margin: 0 auto;
+     padding: 20px 0;
+     width: 100%;
+     overflow: hidden;
+     display: flex;
+ }
+
+ .card1 {
+     width: 100%;
+     color: white;
+     border-radius: 24px;
+     box-shadow: rgba(0, 0, 0, 10%) 5px 5px 20px 0;
+     padding: 20px;
+     font-size: xx-large;
+     justify-content: center;
+     align-items: center;
+     min-height: 200px;
+
+
+ }
+
+
+ .carousel {
+
+
+     >* {
+         flex: 0 0 100%;
+     }
+ }
+
+ .group {
+     display: flex;
+     gap: 20px;
+
+     padding-right: 20px;
+ }
+
+ .group {
+     will-change: transform;
+     animation: scrolling 20s linear infinite;
+     -webkit-animation: scrolling 20s linear infinite;
+ }
+
+ @keyframes scrolling {
+     0% {
+         transform: translateX(0);
+     }
+
+     100% {
+         transform: translateX(-100%);
+     }
+ }
+
+ .carousel {
+
+
+     /* &:hover .group {
+         animation-play-state: paused;
+     } */
+ }
+
+
+ /* ---------------------------------------------- */
+ .mainheader {
+     margin: 10px;
+     border-radius: 15px;
+     -webkit-border-radius: 15px;
+     -moz-border-radius: 15px;
+     -ms-border-radius: 15px;
+     -o-border-radius: 15px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     backdrop-filter: blur(10px);
+     width: calc(100vw - 40px);
+
+     background: #e3f6f5;
+     padding: 10px;
+ }
+
+ .righthearder .logoheader img {
+     width: 70px;
+
+ }
+
+ .imageinifnite {
+     width: 30vw;
+     height: 400px;
+     object-fit: cover;
+     object-position: center;
+ }
+
+
+
+
+
+
+ .searchheader div {
+     border: 2px solid #bae8e8;
+     padding: 10px;
+     border-radius: 15px;
+     -webkit-border-radius: 15px;
+     -moz-border-radius: 15px;
+     -ms-border-radius: 15px;
+     -o-border-radius: 15px;
+     width: 100%;
+
+ }
+
+ .searchheader div input {
+     background: transparent;
+     border: none;
+     outline: none;
+
+     color: #272343;
+     letter-spacing: 1.5px;
+     width: 90%;
+
+ }
+
+ .searchheader div i {
+     padding-left: 5px;
+     color: #272343;
+
+ }
+
+ .accountheader {
+     width: 30px;
+     height: 30px;
+     border-radius: 25px;
+     -webkit-border-radius: 25px;
+     -moz-border-radius: 25px;
+     -ms-border-radius: 25px;
+     -o-border-radius: 25px;
+     border: #bae8e8 2px solid;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-right: 10px;
+ }
+
+ .accountheader i {
+     font-size: 15px;
+     cursor: pointer;
+     transition: 0.3s;
+     -webkit-transition: 0.3s;
+     -moz-transition: 0.3s;
+     -ms-transition: 0.3s;
+     -o-transition: 0.3s;
+ }
+
+ .accountheader i:hover {
+     color: #bae8e8;
+ }
+
+ .maindivhome {
+     height: 100vh;
+     width: 100%;
+     background-image: url("./3509263.jpg");
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: contain;
+
+
+ }
+
+ #linkbtn {
+     transition: 0.3s;
+     -webkit-transition: 0.3s;
+     -moz-transition: 0.3s;
+     -ms-transition: 0.3s;
+     -o-transition: 0.3s;
+     padding: 8px;
+     color: #272343;
+     cursor: pointer;
+
+ }
+
+ #linkbtn:hover {
+     color: rgb(25, 25, 217);
+     transform: scale(1.1);
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -ms-transform: scale(1.1);
+     -o-transform: scale(1.1);
+
+ }
+
+ .descountnumber {
+     color: #7c8a8a;
+     font-size: 17px;
+     text-decoration: line-through;
+ }
+
+ .backgroundfilter {
+     background: transparent;
+     backdrop-filter: blur(3px);
+ }
+
+ /* .backgroundimginimg {
+     background-image: url('./loading_17506984.png');
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+ } */
+
+ .pacifico-regular {
+     font-family: "Pacifico", cursive;
+     font-weight: 200;
+     font-size: 15px;
+     font-style: normal;
+
+ }
+
+ .cardmain {
+     box-shadow: 0 0 3px 2px rgba(10, 1, 65, 0.12);
+     background-color: white;
+     width: 300px;
+     margin: 10px;
+     border-radius: 10px;
+     cursor: pointer;
+     /* scrollSnapAlign: 'start'  ; */
+     -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+     -ms-border-radius: 10px;
+     -o-border-radius: 10px;
+ }
+
+ .cardmainimage {
+     width: 300px;
+     height: 200px;
+     object-fit: cover;
+     border-radius: 10px 10px 0 0;
+     object-position: center;
+
+     -webkit-border-radius: 10px 10px 0 0;
+     -moz-border-radius: 10px 10px 0 0;
+     -ms-border-radius: 10px 10px 0 0;
+     -o-border-radius: 10px 10px 0 0;
+
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: contain;
+     display: flex;
+     justify-content: end;
+ }
+
+ .tagg {
+     width: 35px;
+     height: 35px;
+ }
+
+ .imagescrollin {
+     aspect-ratio: 16 / 6;
+ }
+
+ .imgincatiories {
+     width: 200px;
+     height: 150px;
+     object-fit: cover;
+     object-position: center;
+ }
+
+ @media (max-width: 767.98px) {
+     .border-sm-start-none {
+         border-left: none !important;
+     }
+ 
+ }
+
+ @media (max-width: 500px) {
+     .imageinifnite {
+         max-height: 300px;
+         min-width: 300px;
+     }
+     .imgincatiories{
+        width:150px;
+        height: 100px;
+     }
+
+
+     .cardmain {
+         display: flex;
+         width: 370px;
+         padding: 5px;
+         flex-direction: row;
+         align-items: center;
+     }
+
+     .cardmainimage {
+         object-fit: cover;
+         object-position: center;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: contain;
+         display: flex;
+         justify-content: end;
+         width: 150px;
+         max-height: 70%;
+     }
+
+     .cardmainimage div {
+         width: 25px;
+         height: 25px;
+         border-radius: 10px;
+         -webkit-border-radius: 10px;
+         -moz-border-radius: 10px;
+         -ms-border-radius: 10px;
+         -o-border-radius: 10px;
+         font-size: 10px;
+
+     }
+
+     .imagescrollin {
+         aspect-ratio: 16 / 8;
+     }
+ }
+
+ .aa :hover {
+     opacity: 1;
+ }

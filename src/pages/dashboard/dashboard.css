@@ -1,0 +1,194 @@
+body {
+    overflow-x: hidden;
+
+}
+
+.dashboardparent {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* top sidebar */
+.dashboardtop {
+    position: fixed;
+    top: 0;
+    background: #423334;
+    box-shadow: 0 0 4px 2px rgb(77, 72, 72);
+    height: 60px;
+    width: 100%;
+    z-index: 100;
+}
+
+#dashboardleft {
+    position: fixed;
+    width: 17vw;
+    min-height: calc(100vh - 60px);
+    background: #292929;
+    background-size: cover;
+    top: 60px;
+    flex-grow: 1;
+    box-shadow: 0 1px 4px 1px #fed000;
+    display: flex;
+    align-items: self-start;
+    flex-direction: column;
+    transition: 0.3s;
+    z-index: 12;
+    
+}
+
+#rightdashboard {
+    min-height: calc(100vh - 60px);
+    background: #e3dddd;
+    padding: 10px 20px 0px 20px;
+    margin: 0;
+
+}
+
+/* table */
+#divoftable {
+    overflow: auto;
+    height: calc(100vh - 60px);
+
+}
+
+#divoftable::-webkit-scrollbar {
+    width: 10px;
+    transition: 0.5s;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+#divoftable::-webkit-scrollbar-track {
+    background: #fed000;
+    transition: 0.5s;
+    border-radius: 10px;
+    ;
+}
+
+#divoftable::-webkit-scrollbar-thumb {
+    transition: 0.5s;
+    background: #d2203599;
+    border-radius: 10px;
+}
+
+#divoftable::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+tr td {
+    color: #062e2e;
+    font-size: 18px;
+}
+
+tr th {
+    color: #000000;
+    font-size: 18px;
+}
+
+/* left dash board style */
+ul li {
+    font-size: 23px;
+    color: #b2b7b7;
+   
+    margin-left: 20px;
+    margin-right: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    list-style-type: none;
+}
+
+.ii {
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+.navv {
+    transition: 0.3s;
+    color: #1dabab;
+}
+
+.active {
+    color: #807a61;
+    margin-left: 5px;
+}
+
+ul li:hover,
+.navv:hover {
+    cursor: pointer;
+    color: #187d7d;
+}
+
+/* responseve page dashpoard */
+@media only screen and (max-width: 800px) {
+    .ii {
+        font-size: 20px;
+        margin-left: -15px;
+    }
+
+}
+
+@media only screen and (max-width: 476px) {}
+.custom-progres{
+    width: 90%;
+    height: 9px;
+    border-radius: 4px;
+    background: rgb(214 , 212 , 212);
+    margin: 10px;
+}
+.inner-progresss{
+    background-color:#56b6ff;
+    height: 100%;
+    display: block;
+    border-radius: 4px;
+    transition: .5s;
+    width: 0%;
+    
+}
+.inner-progresss::after{
+    content: attr(percent);
+    position: relative;
+    
+    
+    right: -100%;
+    margin-left:5px ;
+    margin-top: -10px;
+    top: -23px;
+    font-size: 15px;
+    background-color: #2cefef;
+    border-radius: 5px;
+    text-align: center;
+    color:blue;
+    padding: 5px;
+
+   
+ }
+ 
+
+/* Always display the drop down caret */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: #2c3e50;
+}
+
+/* A few custom styles for date inputs */
+input[type="date"] {
+    /* appearance: none;
+    -webkit-appearance: none; */
+    color: #95a5a6;
+    font-family: "Helvetica", arial, sans-serif;
+    font-size: 18px;
+    border:1px solid #ecf0f1;
+    background:#ecf0f1;
+    padding:5px;
+    display: inline-block !important;
+    visibility: visible !important;
+}
+
+input[type="date"], focus {
+    color: #95a5a6;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}

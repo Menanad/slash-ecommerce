@@ -1,0 +1,7 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+body {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
+    
+  }
+  
