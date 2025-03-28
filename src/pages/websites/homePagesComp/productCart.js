@@ -83,7 +83,7 @@ export default function ProductCart(props) {
 
                 <div className="backgroundimginimg">
                     <div style={{
-                        backgroundImage: `url(${props.item.images[0].image})`,
+                        backgroundImage: `url(https://back-end-e-commerce-production-2a6c.up.railway.app/${props.item.images[0].image})`,
                     }} className="cardmainimage"  >
 
                         {props.item.discount != 0 && <div

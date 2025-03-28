@@ -105,12 +105,12 @@ export default function Table(props) {
 
                       item2.key === "images" ?
                         item[item2.key].map(image =>
-                          <img style={{ maxWidth: '500px', maxHeight: '75px', border: '2px solid blue', padding: '3px', margin: '5px' }} src={image.image} alt="image" />
+                          <img style={{ maxWidth: '500px', maxHeight: '75px', border: '2px solid blue', padding: '3px', margin: '5px' }} src={"https://back-end-e-commerce-production-2a6c.up.railway.app/"+image.image} alt="image" />
                         ) :
                         item[item2.key] === currentuser.name
                           ? item[item2.key] + " (you)" :
                           item2.key == "image" ?
-                            <img src={item[item2.key]} alt="image" style={{ maxHeight: '70px', maxWidth: '100px' }} /> :
+                            <img src={ "https://back-end-e-commerce-production-2a6c.up.railway.app/"+item[item2.key]} alt="image" style={{ maxHeight: '70px', maxWidth: '100px' }} /> :
                             item2.key === "updated_at" || item2.key === "created_at" ? TransformDate(item[item2.key]) :
                               item[item2.key]
             }</td>

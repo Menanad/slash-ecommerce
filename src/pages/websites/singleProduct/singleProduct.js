@@ -81,7 +81,7 @@ export default function SingleProduct() {
             .then((data) => {
                 setImages(data.data[0].images
                     .map((img) => {
-                        return { original: `${img.image}`, thumbnail: `${img.image}` }
+                        return { original: `https://back-end-e-commerce-production-2a6c.up.railway.app/${img.image}`, thumbnail: `https://back-end-e-commerce-production-2a6c.up.railway.app/${img.image}` }
                     })
                 )
                 setproduct(data.data[0])
