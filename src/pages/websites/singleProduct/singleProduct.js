@@ -75,13 +75,14 @@ export default function SingleProduct() {
             setStockLoading(false)
         }
     }
+  
 
     useEffect(() => {
         Axios.get(`${Productapi}/${id}`)
             .then((data) => {
                 setImages(data.data[0].images
                     .map((img) => {
-                        return { original: `https://back-end-e-commerce-production-2a6c.up.railway.app/${img.image}`, thumbnail: `https://back-end-e-commerce-production-2a6c.up.railway.app/${img.image}` }
+                        return { original: `https://back-end-e-commerce-production-2a6c.up.railway.app/${img.image}`, thumbnail: `https://back-end-e-commerce-production-2a6c.up.railway.app/${img.image}`,originalHeight:"500px",thumbnailClass:'my-custom-thumbnail'   }
                     })
                 )
                 setproduct(data.data[0])
@@ -175,8 +176,8 @@ export default function SingleProduct() {
                 </MDBContainer>
                 :
                 <MDBContainer style={{ display: 'flex', justifyContent: 'space-around', margin: '10px', flexWrap: 'wrap', padding: '10px' }}>
-                    <div style={{ maxHeight:'70vh'}} className="col-lg-5 col-md-6 col-12">
-                        <ImageGallery items={images} />
+                    <div className="col-lg-5 col-md-6 col-12 imgsingleproduct">
+                        <ImageGallery thumbnailClass="my-custom-thumbnail"   items={images} />
                     </div>
                     <div style={{ color: 'black', padding: '20px' }} className="col-lg-7 col-md-6 col-12">
                         <h1 >{product.title}</h1>

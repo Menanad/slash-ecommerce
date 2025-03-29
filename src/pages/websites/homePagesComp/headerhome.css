@@ -261,6 +261,11 @@
      object-fit: cover;
      object-position: center;
  }
+ .my-custom-thumbnail img{
+    object-fit: contain;
+    max-height: 100px;
+    max-width: 100px;
+}
 
  @media (max-width: 767.98px) {
      .border-sm-start-none {
@@ -315,6 +320,9 @@
      .imagescrollin {
          aspect-ratio: 16 / 8;
      }
+     /* .imgsingleproduct{
+         
+     } */
  }
 
  .aa :hover {

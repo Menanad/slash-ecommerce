@@ -81,7 +81,6 @@ export default function HeaderHome() {
                                 <span className='visually-hidden'>Loading...</span>
                             </MDBSpinner>
                         </div>}
-
                     </div>
                 </div>
                 <hr />

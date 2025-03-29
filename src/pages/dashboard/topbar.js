@@ -47,7 +47,7 @@ export default function Topbar() {
             <div style={{ width: '100vw', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-evenly' }}>
                 <div style={{ flexGrow: '8', marginLeft: '20px' }}>
                     <h2 style={{ color: " #fed000", cursor: 'pointer', fontWeight: '600' }}>
-                        <i class="fas fa-table-columns ii" onClick={() => { nav('/') }}>Dashboard</i>
+                        <i class="fas fa-table-columns ii" >Dashboard</i>
                         <i onClick={sidebar} className="fas fa-bars ii" style={{ marginLeft: '15px', color: '#d22034', cursor: 'pointer' }}></i>
                     </h2> 
                 </div>
