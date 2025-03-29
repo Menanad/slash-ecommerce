@@ -35,10 +35,8 @@ export default function ShowCtegories() {
                     >
                         <img
                             className="imgincatiories"
-
                             src={`https://back-end-e-commerce-production-2a6c.up.railway.app/${item.image}`}
                             fluid
-
                         />
                         <a href="#!">
                             <div
@@ -48,7 +46,7 @@ export default function ShowCtegories() {
                                 <div className="d-flex justify-content-start align-items-start h-100">
                                     <h5>
                                         <span className="badge bg-light pt-2 ms-3 mt-3 text-dark">
-                                            {item.title.length > 8 ? item.title.slice(1, 8) + "...." : item.title}
+                                            {item.title.length > 12 ? item.title.slice(0, 12) + "...." : item.title}
                                         </span>
                                     </h5>
                                 </div>

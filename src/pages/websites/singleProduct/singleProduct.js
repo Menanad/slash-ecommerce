@@ -151,7 +151,6 @@ export default function SingleProduct() {
                             <hr style={{ width: '100%' }} />
                         </div>
                         <div className="d-flex justify-content-between mb-2">
-
                             <div className="  text-warning">
                                 <SkeletonComp width={'50px'} count={1} margin={'5px'} height={'10px'} />
                             </div>
@@ -169,7 +168,6 @@ export default function SingleProduct() {
                                 </a>
                             </h4>
                             <h4 style={{ display: 'inline', fontSize: '15px' }} className=" text-danger">
-
                                 <SkeletonComp count={1} margin={'5px'} width={'50px'} height={'20px'} />
                             </h4>
                         </div>
@@ -177,7 +175,7 @@ export default function SingleProduct() {
                 </MDBContainer>
                 :
                 <MDBContainer style={{ display: 'flex', justifyContent: 'space-around', margin: '10px', flexWrap: 'wrap', padding: '10px' }}>
-                    <div className="col-lg-5 col-md-6 col-12">
+                    <div style={{ maxHeight:'70vh'}} className="col-lg-5 col-md-6 col-12">
                         <ImageGallery items={images} />
                     </div>
                     <div style={{ color: 'black', padding: '20px' }} className="col-lg-7 col-md-6 col-12">
@@ -190,7 +188,7 @@ export default function SingleProduct() {
                         <div style={{ alignItems: 'center', flexWrap: 'wrap' }} className="d-flex justify-content-between mb-2">
 
                             <div className="  text-warning">
-                                <span>Rated: </span>
+                                <span>Rated: </span> 
                                 {array}
                             </div>
                           {product.stock!=0 && <div>

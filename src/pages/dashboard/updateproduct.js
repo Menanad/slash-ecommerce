@@ -203,7 +203,7 @@ export default function UpdateProduct() {
             <div key={index} style={{ display: 'flex', margin: '10px', alignItems: 'center', flexDirection: 'column', width: '100%', border: 'solid 1px gray' }}>
                 <div style={{ display: 'flex', margin: '10px', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
                     <div style={{ display: 'flex', margin: '10px', alignItems: 'center' }}>
-                        <img src={img.image} style={{ width: '100px' }} ></img>
+                        <img src={"https://back-end-e-commerce-production-2a6c.up.railway.app/"+img.image} style={{ width: '100px' }} ></img>
 
                     </div>
                     <div onClick={() => { handleDeleteImageFromServer(img.id) }} style={{ marginRight: '60px', backgroundColor: ' #2cefef', borderRadius: '5px', padding: '10px' }}>
