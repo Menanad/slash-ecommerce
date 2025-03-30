@@ -35,7 +35,7 @@ export default function ShowCtegories() {
                     >
                         <img
                             className="imgincatiories"
-                            src={`https://back-end-e-commerce-production-2a6c.up.railway.app/${item.image}`}
+                            src={`https://back-end-e-commerce-production-85fa.up.railway.app/${item.image}`}
                             fluid
                         />
                         <a href="#!">

@@ -61,7 +61,7 @@ export default function HeaderHome() {
             <>
                 <div className='col-12' style={{ display: 'flex', marginBottom: '10px' }}>
                     <div>
-                        <img style={{ width: '125px', height: '90px', objectFit: 'contain', objectPosition: 'center' }} src={`https://back-end-e-commerce-production-2a6c.up.railway.app/${item.images[0].image}`} />
+                        <img style={{ width: '125px', height: '90px', objectFit: 'contain', objectPosition: 'center' }} src={` https://back-end-e-commerce-production-85fa.up.railway.app/${item.images[0].image}`} />
                         <PlusMunis setStockLoading={(data) => setLoadingStock(data)} id={item.id} count={item.count || 1} setCount={(data) => setcount(data)} />
                     </div>
                     <div style={{ padding: ' 0 20px 20px 20px', width: '100%' }}>

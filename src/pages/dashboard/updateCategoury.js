@@ -30,7 +30,7 @@ export default function UpdateCategorry() {
         Axios.get(`${CAT}/${id}`)
             .then((data) => {
                 
-                setimageshow("https://back-end-e-commerce-production-2a6c.up.railway.app/"+data.data.image)
+                setimageshow("https://back-end-e-commerce-production-85fa.up.railway.app/"+data.data.image)
                 
                 settitle(data.data.title);
                 setload(false);
