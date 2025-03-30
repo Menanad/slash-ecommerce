@@ -112,7 +112,7 @@ export default function LogIn() {
                       </div> : <p>Log In</p>}
                   </MDBBtn>
                   {emailerr === 401 && <div><p className='ms-5' style={{ color: 'red', fontSize: '16px', margin: '0', marginTop: '-20px', marginBottom: '10px' }}>The email or password is not correct</p></div>}
-                  <a className='btn btn-primary mb-4 px-5 mx-5 w-100' style={{ fontSize: '15px' }} href={"http://127.0.0.1:8000/login-google"}><i class="fab fa-google me-2"></i> Sign in with google</a>
+                  <a className='btn btn-primary mb-4 px-5 mx-5 w-100' style={{ fontSize: '15px' }} href={"https://back-end-e-commerce-production-2a6c.up.railway.app/login-google"}><i class="fab fa-google me-2"></i> Sign in with google</a>
 
 
                   {/* <p className="small mb-5 pb-lg-3 ms-5"><a class="text-muted" href="#!">Forgot password?</a></p> */}

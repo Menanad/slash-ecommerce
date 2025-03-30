@@ -120,7 +120,7 @@ useEffect(()=>{
 
                 {emailerr === 500 && CheckSub && <div><p style={{ color: 'red', fontSize: '13px', margin: '0', marginTop: '-20px', marginBottom: '10px' }}>this email is already been used </p></div>}
 
-                <a className='btn btn-danger mb-4 px-2 ' style={{ fontSize: '15px', width: '70%' }} href='http://127.0.0.1:8000/login-google'><i class="fab fa-google me-2"></i>sign up with Google</a>
+                <a className='btn btn-danger mb-4 px-2 ' style={{ fontSize: '15px', width: '70%' }} href='https://back-end-e-commerce-production-2a6c.up.railway.app/login-google'><i class="fab fa-google me-2"></i>sign up with Google</a>
                 <p className="mb-5 pb-lg-2" style={{ color: '#393f81' }}>Do you have an account? <a href="#!" style={{ color: '#393f81' }}><Link to='/login'>Log_In here</Link></a></p>
 
 
