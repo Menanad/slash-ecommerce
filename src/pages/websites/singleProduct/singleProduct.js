@@ -82,7 +82,7 @@ export default function SingleProduct() {
             .then((data) => {
                 setImages(data.data[0].images
                     .map((img) => {
-                        return { original: `https://back-end-e-commerce-production-2a6c.up.railway.app/${img.image}`, thumbnail: `https://back-end-e-commerce-production-2a6c.up.railway.app/${img.image}`,originalHeight:"500px",thumbnailClass:'my-custom-thumbnail'   }
+                        return { original: `https://back-end-e-commerce-production-85fa.up.railway.app/${img.image}`, thumbnail: `https://back-end-e-commerce-production-85fa.up.railway.app/${img.image}`,originalHeight:"500px",thumbnailClass:'my-custom-thumbnail'   }
                     })
                 )
                 setproduct(data.data[0])
